@@ -3,7 +3,6 @@ from OpenSSL import SSL,crypto
 import socket
 import certifi
 import pem
-import fnmatch
 import urllib
 import re
 
@@ -111,4 +110,3 @@ if __name__ == "__main__":
     print("Certificate Validator...")
     target_domain = input("Enter TLS site to validate: ")
     print("Certificate for {} verifed: {}".format(target_domain, x509_cert_chain_check(target_domain)))
-    # x509_cert_chain_check(target_domain)
